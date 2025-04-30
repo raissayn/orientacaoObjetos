@@ -1,0 +1,29 @@
+// lab 1 á 3 somente analise do ambiente
+Classe → É como um molde ou projeto para criar objetos.
+Objeto → É uma instância concreta dessa classe.
+
+Classe carro em JAVA
+public class Carro {
+    // Propriedades (variáveis de instância)
+    private String cor;
+    private String modelo;
+    private boolean ligado;
+
+    // Métodos (comportamentos)
+    public void ligar() {
+        ligado = true;
+        System.out.println("Carro ligado.");
+    }
+
+    public void desligar() {
+        ligado = false;
+        System.out.println("Carro desligado.");
+    }
+}
+Criando um OBJETO
+public class Principal {
+    public static void main(String[] args) {
+        Carro meuCarro = new Carro(); // Instanciação
+        meuCarro.ligar();             // Chamando método
+    }
+}
