@@ -27,3 +27,16 @@ public class Principal {
         meuCarro.ligar();             // Chamando método
     }
 }
+-----------------------------
+#aula 07
+Classe	= Molde para criar objetos -	class Carro
+Objeto	= Instância da classe -	Carro meuCarro = new Carro();
+Atributo = Característica do objeto -	private String cor;
+Método = Ação do objeto -	public void ligar()
+Get/Set	= Acessar ou mudar atributo -	setCor("Azul")
+Package	= Organiza as classes -	package br.com.exemplo;
+Lombok = Gera código automaticamente -	@Data
+
+
+-----------------------------
+Array
