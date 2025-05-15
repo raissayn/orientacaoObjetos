@@ -1,31 +1,23 @@
 package Banco;
 
 public class TesteBanco1 {  public static void main(String[] args) {
-    // 1) Cria o cliente
-    Cliente bruno = new Cliente("Bruno" , "Henrique");
+    System.out.println("Criando o cliente Bruno Henrique");
 
-    // Criar conta com saldo inicial de R$ 50.000,00 e associar ao cliente
-    Conta conta = new Conta(50000.00);
-    bruno.setConta(conta); // supondo que Cliente tem um método setConta()
+    Cliente cliente = new Cliente("Bruno", "Henrique");
 
-    System.out.println("Cliente: " + bruno.getNome());
+    System.out.println("Criando uma conta com saldo de R$ 50.000,00 para o cliente Bruno Henrique.");
 
-    // Saque de R$ 1.200,00
-    System.out.println("\nSacando R$ 1.200,00");
-    conta.sacar(1200.00);
+    Conta conta = new Conta(50000);
+    cliente.setConta(conta);
 
-    // Depósito de R$ 8.525,00
-    System.out.println("\nDepositando R$ 8.525,00");
-    conta.depositar(8525.00);
+    System.out.println("Sacando R$ 1.200,00: " + conta.sacar(1200));
 
-    // Saque de R$ 12.800,00
-    System.out.println("\nSacando R$ 12.800,00");
-    conta.sacar(12800.00);
+    System.out.println("Depositando R$ 8.525,00: " + conta.depositar(8525));
 
-    // Saque de R$ 50.000,00 (deve falhar ou deixar saldo negativo, dependendo da lógica da Conta)
-    System.out.println("\nTentando sacar R$ 50.000,00");
-    conta.sacar(50000.00);
-    System.out.println("Saldo final: R$ " + conta.getSaldo());
+    System.out.println("Sacando R$ 12.800,00: " + conta.sacar(12800) );
+
+    System.out.println("Sacando R$ 50.000,00: " + conta.sacar(50000) );
+
+    System.out.println("O saldo da conta é R$ " + conta.getSaldo());
 }
-
 }
