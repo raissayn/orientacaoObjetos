@@ -10,14 +10,17 @@ public class Conta {
     public double getSaldo(){
         return this.saldo;
     }
-    public void depositar (double valor){
-        this.saldo += valor;
+    public boolean depositar (double valor){
+       this.saldo += valor;
+        return true;
     }
-    public void sacar (double amount){
+    public boolean sacar (double amount){
         if ( this.saldo >= amount){
             this.saldo -= amount;
+            return true;
         } else {
             System.out.println("Saldo insuficiente");
+            return false; // saque falhou
         }
     }
 }
