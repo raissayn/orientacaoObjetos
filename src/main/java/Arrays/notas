@@ -1,0 +1,4 @@
+=== VER VIDEOS DE ARRAYS!
+
+O que aconteceu com array1?
+Como array1 e array2 apontam para o mesmo array na memória, qualquer modificação feita em array2 também afeta array1.
