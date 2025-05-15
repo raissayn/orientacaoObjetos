@@ -1,0 +1,5 @@
+Quando ocorre a subescrita com a mesma chamada de metodo na superclasse, invoca o metodo da subclasse
+Interface = todos os metodos abstratos
+para uma classe ser abstrata, basta um metodo ser abstrato.
+
+classe Italico UML = classe abstrata
